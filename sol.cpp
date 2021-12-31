@@ -12,6 +12,7 @@ int main() {
 		cin >> n;
 		string s;
 		cin >> s;
+		// find the minimum frequency between 1s and 0s and decrement it (if it's greater than 0)
 		int ones = count(s.begin(), s.end(), '1');
 		int zeroes = count(s.begin(), s.end(), '0');
 		int mn = min(ones, zeroes);
